@@ -1,0 +1,11 @@
+<h1>Messages</h1>
+<div id="chat-messages" #chatMessages>
+    <li *ngFor="let msg of messages">
+        {{msg.body}}
+    </li>
+</div>
+
+<form (ngSubmit)="send()">
+    <input type="text" [(ngModel)]="text" class="form-crontrol" name="text" placeholder="Message text..." autofocus
+        autocomplete="off">
+</form>
