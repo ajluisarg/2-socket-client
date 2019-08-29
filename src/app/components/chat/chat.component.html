@@ -1,7 +1,7 @@
 <h1>Messages</h1>
 <div id="chat-messages" #chatMessages>
     <li *ngFor="let msg of messages">
-        {{msg.body}}
+        {{msg.from}}: {{msg.body}}
     </li>
 </div>
 

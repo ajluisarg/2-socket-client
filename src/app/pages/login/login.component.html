@@ -1,0 +1,11 @@
+
+<div class="row justify-content-center">
+    <div class="col-9">
+        <form class="p-4" (ngSubmit)=login()>
+
+            <input type="text" [(ngModel)]="name" name="name" class="form-control" placeholder="Name" autofocus>
+            <button class="btn btn-primary btn-block" [disabled]="!name">Login</button>
+        </form>
+    </div>
+</div>
+
